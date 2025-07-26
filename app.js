@@ -15,7 +15,7 @@ connectDB();
 
 app.use(cors({
   origin: function (origin, callback) {
-    if (!origin || origin.startsWith("http://localhost:")) {
+    if (!origin || origin.startsWith("https://podvibe-frontend-6wi8.onrender.com")) {
       callback(null, true);
     } else {
       callback(new Error("Not allowed by CORS"));
